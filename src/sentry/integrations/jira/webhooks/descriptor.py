@@ -47,18 +47,6 @@ class JiraDescriptorEndpoint(Endpoint):
                         "name": {"value": "Configure Sentry Add-on"},
                         "key": "configure-sentry",
                     },
-                    "jiraIssueGlances": [
-                        {
-                            "icon": {"width": 24, "height": 24, "url": sentry_logo},
-                            "content": {"type": "label", "label": {"value": "Linked Issues"}},
-                            "target": {
-                                "type": "web_panel",
-                                "url": "/extensions/jira/issue/{issue.key}/",
-                            },
-                            "name": {"value": "Sentry "},
-                            "key": "sentry-issues-glance",
-                        }
-                    ],
                     "webhooks": [
                         {
                             "event": "jira:issue_updated",
